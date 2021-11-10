@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bio_metals",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "bio_metals:rose_gold_nugget"
+    }
+  },
+  "result": {
+    "item": "bio_metals:rose_gold_ingot"
+  }
+}

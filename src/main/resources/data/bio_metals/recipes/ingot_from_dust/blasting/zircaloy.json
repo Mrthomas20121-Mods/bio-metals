@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "bio_metals:zircaloy_dust"
+  },
+  "result": "bio_metals:zircaloy_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

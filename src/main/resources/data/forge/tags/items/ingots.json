@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "bio_metals:antimony_ingot",
+    "bio_metals:beryllium_ingot",
+    "bio_metals:beryllium_copper_ingot",
+    "bio_metals:netherite_steel_ingot",
+    "bio_metals:nordic_gold_ingot",
+    "bio_metals:rose_gold_ingot",
+    "bio_metals:tungsten_ingot",
+    "bio_metals:tungsten_steel_ingot",
+    "bio_metals:zircaloy_ingot",
+    "bio_metals:zirconium_ingot"
+  ]
+}

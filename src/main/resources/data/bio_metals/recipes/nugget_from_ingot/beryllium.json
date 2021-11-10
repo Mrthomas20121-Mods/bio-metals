@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bio_metals",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/beryllium"
+    }
+  ],
+  "result": {
+    "item": "bio_metals:beryllium_nugget",
+    "count": 9
+  }
+}

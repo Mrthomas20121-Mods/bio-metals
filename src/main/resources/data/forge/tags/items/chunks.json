@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bio_metals:antimony_chunk",
+    "bio_metals:beryllium_chunk",
+    "bio_metals:tungsten_chunk",
+    "bio_metals:zirconium_chunk"
+  ]
+}

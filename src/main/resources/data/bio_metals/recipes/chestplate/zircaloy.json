@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bio_metals",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:ingots/zircaloy"
+    }
+  },
+  "result": {
+    "item": "bio_metals:zircaloy_chestplate"
+  }
+}

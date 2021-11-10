@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bio_metals",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:ingots/beryllium_copper"
+    }
+  },
+  "result": {
+    "item": "bio_metals:beryllium_copper_chestplate"
+  }
+}

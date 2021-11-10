@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bio_metals",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/zirconium"
+    }
+  },
+  "result": {
+    "item": "bio_metals:zirconium_block"
+  }
+}

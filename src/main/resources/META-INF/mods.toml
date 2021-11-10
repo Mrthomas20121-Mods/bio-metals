@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT License"
+issueTrackerURL="https://github.com/Mrthomas20121/bio-metals/issues"
+
+[[mods]]
+modId="bio_metals"
+version="${version}"
+displayName="Bio Metals"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/bio-metals"
+#logoFile="tinkers_reforged_logo.png"
+authors="Mrthomas20121"
+description='''
+Add new Metals to Minecraft
+'''
+
+[[dependencies.bio_metals]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.bio_metals]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_range}"
+    ordering="NONE"
+    side="BOTH"

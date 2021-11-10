@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "bio_metals:tungsten_dust"
+  },
+  "result": "bio_metals:tungsten_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

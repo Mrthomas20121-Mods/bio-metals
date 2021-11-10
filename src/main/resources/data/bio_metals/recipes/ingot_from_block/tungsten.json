@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "emendatusenigmatica",
+  "ingredients": [
+    {
+      "item": "bio_metals:tungsten_block"
+    }
+  ],
+  "result": {
+    "item": "bio_metals:tungsten_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "bio_metals:antimony_plate",
+    "bio_metals:beryllium_plate",
+    "bio_metals:beryllium_copper_plate",
+    "bio_metals:netherite_steel_plate",
+    "bio_metals:nordic_gold_plate",
+    "bio_metals:rose_gold_plate",
+    "bio_metals:tungsten_plate",
+    "bio_metals:tungsten_steel_plate",
+    "bio_metals:zircaloy_plate",
+    "bio_metals:zirconium_plate"
+  ]
+}

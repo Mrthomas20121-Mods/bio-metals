@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bio_metals:netherite_steel_helmet",
+    "bio_metals:netherite_steel_chestplate",
+    "bio_metals:netherite_steel_leggings",
+    "bio_metals:netherite_steel_boots"
+  ]
+}

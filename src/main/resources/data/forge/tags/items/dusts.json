@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "bio_metals:antimony_dust",
+    "bio_metals:beryllium_dust",
+    "bio_metals:beryllium_copper_dust",
+    "bio_metals:netherite_steel_dust",
+    "bio_metals:nordic_gold_dust",
+    "bio_metals:rose_gold_dust",
+    "bio_metals:tungsten_dust",
+    "bio_metals:tungsten_steel_dust",
+    "bio_metals:zircaloy_dust",
+    "bio_metals:zirconium_dust"
+  ]
+}

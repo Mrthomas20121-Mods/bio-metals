@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bio_metals",
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:ingots/netherite_steel"
+    }
+  },
+  "result": {
+    "item": "bio_metals:netherite_steel_boots"
+  }
+}

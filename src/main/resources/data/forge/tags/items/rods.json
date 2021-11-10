@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "bio_metals:antimony_rod",
+    "bio_metals:beryllium_rod",
+    "bio_metals:beryllium_copper_rod",
+    "bio_metals:netherite_steel_rod",
+    "bio_metals:nordic_gold_rod",
+    "bio_metals:rose_gold_rod",
+    "bio_metals:tungsten_rod",
+    "bio_metals:tungsten_steel_rod",
+    "bio_metals:zircaloy_rod",
+    "bio_metals:zirconium_rod"
+  ]
+}
