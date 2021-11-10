@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:nether/netherite_armor",
+  "display": {
+    "icon": {
+      "item": "bio_metals:netherite_steel_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.netherite_steel_armor.title"
+    },
+    "description": {
+      "translate": "advancements.netherite_steel_armor.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "netherite_steel_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "bio_metals:netherite_steel_helmet"
+          },
+          {
+            "item": "bio_metals:netherite_steel_chestplate"
+          },
+          {
+            "item": "bio_metals:netherite_steel_leggings"
+          },
+          {
+            "item": "bio_metals:netherite_steel_boots"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "netherite_steel_armor"
+    ]
+  ]
+}

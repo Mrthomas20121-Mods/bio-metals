@@ -1,6 +1,8 @@
 {
   "itemGroup.bio_metals": "Bio Metals",
   "bio_metals.netherite_steel": "FULL SET Give Fire Resistance",
+  "advancements.netherite_steel_armor.title": "Cover Me in Netherite Steel",
+  "advancements.netherite_steel_armor.description": "Get a full suit of Netherite Steel armor",
   "item.bio_metals.antimony_dust": "Antimony Dust",
   "item.bio_metals.antimony_gear": "Antimony Gear",
   "item.bio_metals.antimony_ingot": "Antimony Ingot",

@@ -2,17 +2,15 @@ package mrthomas20121.bio_metals;
 
 import mrthomas20121.bio_metals.items.BIOArmor;
 import mrthomas20121.bio_metals.items.NetheriteSteelArmor;
+import mrthomas20121.bio_metals.items.NetheriteSteelSword;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.OreBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModList;
-import net.minecraft.item.Items;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.IForgeRegistry;
 
@@ -191,7 +189,7 @@ public class BioRegistry {
         beryllium_copper_pickaxe = register("beryllium_copper_pickaxe", new PickaxeItem(ItemTiers.BERYLLIUM_COPPER, 1, -2.8f, new Item.Properties().tab(tab)), event.getRegistry());
         beryllium_copper_shovel = register("beryllium_copper_shovel", new ShovelItem(ItemTiers.BERYLLIUM_COPPER, 1.5f, -3f, new Item.Properties().tab(tab)), event.getRegistry());
         beryllium_copper_sword = register("beryllium_copper_sword", new SwordItem(ItemTiers.BERYLLIUM_COPPER, 3, -2.4f, new Item.Properties().tab(tab)), event.getRegistry());
-        beryllium_copper_hoe = register("beryllium_copper_hoe", new HoeItem(ItemTiers.BERYLLIUM_COPPER, -4, -2.8f, new Item.Properties().tab(tab)), event.getRegistry());
+        beryllium_copper_hoe = register("beryllium_copper_hoe", new HoeItem(ItemTiers.BERYLLIUM_COPPER, -2, -2.8f, new Item.Properties().tab(tab)), event.getRegistry());
         beryllium_copper_helmet = register("beryllium_copper_helmet", new BIOArmor(BIOArmorMaterial.BERYLLIUM_COPPER, EquipmentSlotType.HEAD).setArmorTexture("beryllium_copper_layer_1"), event.getRegistry());
         beryllium_copper_chestplate = register("beryllium_copper_chestplate", new BIOArmor(BIOArmorMaterial.BERYLLIUM_COPPER, EquipmentSlotType.CHEST).setArmorTexture("beryllium_copper_layer_1"), event.getRegistry());
         beryllium_copper_leggings = register("beryllium_copper_leggings", new BIOArmor(BIOArmorMaterial.BERYLLIUM_COPPER, EquipmentSlotType.LEGS).setArmorTexture("beryllium_copper_layer_2"), event.getRegistry());
@@ -207,7 +205,7 @@ public class BioRegistry {
         netherite_steel_axe = register("netherite_steel_axe", new AxeItem(ItemTiers.NETHERITE_STEEL, 5f, -3f, new Item.Properties().tab(tab).fireResistant()), event.getRegistry());
         netherite_steel_pickaxe = register("netherite_steel_pickaxe", new PickaxeItem(ItemTiers.NETHERITE_STEEL, 1, -2.8f, new Item.Properties().tab(tab).fireResistant()), event.getRegistry());
         netherite_steel_shovel = register("netherite_steel_shovel", new ShovelItem(ItemTiers.NETHERITE_STEEL, 1.5f, -3f, new Item.Properties().tab(tab).fireResistant()), event.getRegistry());
-        netherite_steel_sword = register("netherite_steel_sword", new SwordItem(ItemTiers.NETHERITE_STEEL, 3, -2.4f, new Item.Properties().tab(tab).fireResistant()), event.getRegistry());
+        netherite_steel_sword = register("netherite_steel_sword", new NetheriteSteelSword(ItemTiers.NETHERITE_STEEL, 3, -2.4f, new Item.Properties().tab(tab).fireResistant()), event.getRegistry());
         netherite_steel_hoe = register("netherite_steel_hoe", new HoeItem(ItemTiers.NETHERITE_STEEL, -2, -2.8f, new Item.Properties().tab(tab).fireResistant()), event.getRegistry());
         netherite_steel_helmet = register("netherite_steel_helmet", new NetheriteSteelArmor(BIOArmorMaterial.NETHERITE_STEEL, EquipmentSlotType.HEAD).setArmorTexture("netherite_steel_layer_1"), event.getRegistry());
         netherite_steel_chestplate = register("netherite_steel_chestplate", new NetheriteSteelArmor(BIOArmorMaterial.NETHERITE_STEEL, EquipmentSlotType.CHEST).setArmorTexture("netherite_steel_layer_1"), event.getRegistry());
@@ -315,7 +313,6 @@ public class BioRegistry {
         register("zirconium_ore", zirconium_ore, event.getRegistry());
 
     }
-
 
     private static Item register(String registry_name, Item item, IForgeRegistry<Item> r) {
         item.setRegistryName(BioMetals.mod_id, registry_name);

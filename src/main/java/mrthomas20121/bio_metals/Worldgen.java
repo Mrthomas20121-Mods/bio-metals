@@ -5,10 +5,7 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureSpread;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.feature.*;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -20,9 +17,9 @@ public class Worldgen {
     public static int ANTIMONY_HEIGHT = 40;
     public static int ANTIMONY_CHUNK = 8;
 
-    public static int BERYLLIUM_VEIN = 5;
-    public static int BERYLLIUM_HEIGHT = 20;
-    public static int BERYLLIUM_CHUNK = 6;
+    public static int BERYLLIUM_VEIN = 3;
+    public static int BERYLLIUM_HEIGHT = 32;
+    public static int BERYLLIUM_CHUNK = 9;
 
     public static int TUNGSTEN_VEIN = 7;
     public static int TUNGSTEN_HEIGHT_MIN = 16;
