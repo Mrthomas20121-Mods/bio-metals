@@ -3,6 +3,8 @@ package mrthomas20121.bio_metals.items;
 import com.google.common.collect.ImmutableList;
 import mrthomas20121.bio_metals.BioRegistry;
 import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
@@ -27,6 +29,11 @@ public class NetheriteSteelArmor extends BIOArmor {
 
     public NetheriteSteelArmor(IArmorMaterial armorMaterial, EquipmentSlotType slot) {
         super(armorMaterial, slot, new Item.Properties().tab(BioRegistry.tab).fireResistant());
+    }
+
+    @Override
+    public boolean canApplyAtEnchantingTable(ItemStack stack, Enchantment enchantment) {
+        return super.canApplyAtEnchantingTable(stack, enchantment) && !enchantment.equals(Enchantments.FIRE_PROTECTION);
     }
 
     @Override
