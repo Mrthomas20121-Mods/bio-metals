@@ -21,7 +21,7 @@ public enum BIOArmorMaterial implements IArmorMaterial {
     TUNGSTEN_STEEL("tungsten_steel", 25, new int[]{2, 5, 7, 2}, 15, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.1F, () -> {
         return Ingredient.of(BioRegistry.tungsten_steel_ingot);
     }),
-    ZIRCALOY("zircaloy", 10, new int[]{2, 4, 6, 2}, 22, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.1F, () -> {
+    ZIRCALOY("zircaloy", 10, new int[]{2, 4, 6, 2}, 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.1F, () -> {
         return Ingredient.of(BioRegistry.zircaloy_ingot);
     }),
     BERYLLIUM_COPPER("beryllium_copper", 20, new int[]{3, 6, 8, 3}, 22, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.1F, () -> {
