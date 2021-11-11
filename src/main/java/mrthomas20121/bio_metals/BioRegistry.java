@@ -1,5 +1,6 @@
 package mrthomas20121.bio_metals;
 
+import mrthomas20121.bio_metals.blocks.BIOBlock;
 import mrthomas20121.bio_metals.items.BIOArmor;
 import mrthomas20121.bio_metals.items.NetheriteSteelArmor;
 import mrthomas20121.bio_metals.items.NetheriteSteelSword;
@@ -35,8 +36,8 @@ public class BioRegistry {
     public static Item antimony_rod;
     public static Item antimony_chunk;
     public static Item antimony_cluster;
-    public static Block antimony_block = new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
-    public static Block antimony_ore = new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(1));
+    public static Block antimony_block = new BIOBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
+    public static Block antimony_ore = new BIOBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(1));
 
     public static Item beryllium_dust;
     public static Item beryllium_gear;
@@ -46,8 +47,8 @@ public class BioRegistry {
     public static Item beryllium_rod;
     public static Item beryllium_chunk;
     public static Item beryllium_cluster;
-    public static Block beryllium_block = new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
-    public static Block beryllium_ore = new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(2));
+    public static Block beryllium_block = new BIOBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
+    public static Block beryllium_ore = new BIOBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(2));
 
     public static Item beryllium_copper_dust;
     public static Item beryllium_copper_gear;
@@ -64,7 +65,7 @@ public class BioRegistry {
     public static Item beryllium_copper_chestplate;
     public static Item beryllium_copper_leggings;
     public static Item beryllium_copper_boots;
-    public static Block beryllium_copper_block = new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
+    public static Block beryllium_copper_block = new BIOBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
 
     public static Item netherite_steel_dust;
     public static Item netherite_steel_gear;
@@ -81,7 +82,7 @@ public class BioRegistry {
     public static Item netherite_steel_chestplate;
     public static Item netherite_steel_leggings;
     public static Item netherite_steel_boots;
-    public static Block netherite_steel_block = new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
+    public static Block netherite_steel_block = new BIOBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
 
     public static Item nordic_gold_dust;
     public static Item nordic_gold_gear;
@@ -89,7 +90,7 @@ public class BioRegistry {
     public static Item nordic_gold_nugget;
     public static Item nordic_gold_plate;
     public static Item nordic_gold_rod;
-    public static Block nordic_gold_block = new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
+    public static Block nordic_gold_block = new BIOBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
 
     public static Item rose_gold_dust;
     public static Item rose_gold_gear;
@@ -97,7 +98,7 @@ public class BioRegistry {
     public static Item rose_gold_nugget;
     public static Item rose_gold_plate;
     public static Item rose_gold_rod;
-    public static Block rose_gold_block = new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
+    public static Block rose_gold_block = new BIOBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
 
     public static Item tungsten_dust;
     public static Item tungsten_gear;
@@ -107,8 +108,8 @@ public class BioRegistry {
     public static Item tungsten_rod;
     public static Item tungsten_chunk;
     public static Item tungsten_cluster;
-    public static Block tungsten_block = new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
-    public static Block tungsten_ore = new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(3));
+    public static Block tungsten_block = new BIOBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
+    public static Block tungsten_ore = new BIOBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(3));
 
     public static Item tungsten_steel_dust;
     public static Item tungsten_steel_gear;
@@ -125,7 +126,7 @@ public class BioRegistry {
     public static Item tungsten_steel_chestplate;
     public static Item tungsten_steel_leggings;
     public static Item tungsten_steel_boots;
-    public static Block tungsten_steel_block = new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
+    public static Block tungsten_steel_block = new BIOBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
 
     public static Item zircaloy_dust;
     public static Item zircaloy_gear;
@@ -142,7 +143,7 @@ public class BioRegistry {
     public static Item zircaloy_chestplate;
     public static Item zircaloy_leggings;
     public static Item zircaloy_boots;
-    public static Block zircaloy_block = new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
+    public static Block zircaloy_block = new BIOBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
 
     public static Item zirconium_dust;
     public static Item zirconium_gear;
@@ -152,8 +153,8 @@ public class BioRegistry {
     public static Item zirconium_rod;
     public static Item zirconium_chunk;
     public static Item zirconium_cluster;
-    public static Block zirconium_block = new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
-    public static Block zirconium_ore = new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(2));
+    public static Block zirconium_block = new BIOBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE));
+    public static Block zirconium_ore = new BIOBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(2));
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
