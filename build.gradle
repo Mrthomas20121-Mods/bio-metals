@@ -21,15 +21,14 @@ version = bio_metals_version
 group = 'mrthomas20121.bio_metals'
 archivesBaseName = 'bio_metals'
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(8)
+java.toolchain.languageVersion = JavaLanguageVersion.of(16)
 
 minecraft {
-    mappings channel: 'official', version: '1.16.5'
+    mappings channel: 'official', version: '1.17.1'
 
     runs {
         client {
             workingDirectory project.file('run')
-            jvmArgs "-Dmixin.env.disableRefMap=true"
 
             property 'forge.logging.markers', 'REGISTRIES'
 
@@ -44,7 +43,6 @@ minecraft {
 
         server {
             workingDirectory project.file('run')
-            jvmArgs "-Dmixin.env.disableRefMap=true"
 
             property 'forge.logging.markers', 'REGISTRIES'
 
@@ -59,7 +57,6 @@ minecraft {
 
         data {
             workingDirectory project.file('run')
-            jvmArgs "-Dmixin.env.disableRefMap=true"
 
             property 'forge.logging.markers', 'REGISTRIES'
 
@@ -80,11 +77,10 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 dependencies {
-    def mc = minecraft "net.minecraftforge:forge:1.16.5-${forge_version}"
-    implementation fg.deobf("mezz.jei:jei-1.16.4:7.6.1.65")
-    annotationProcessor 'com.google.code.gson:gson:2.8.6'
-    annotationProcessor 'org.reflections:reflections:0.9.10'
-    annotationProcessor mc
+    minecraft group: 'net.minecraftforge', name: 'forge', version: "1.17.1-${forge_version}"
+    //implementation fg.deobf("mezz.jei:jei-1.16.4:7.6.1.65")
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
 }
 
 repositories {
@@ -113,16 +109,6 @@ if (System.getenv().ARTIFACT_VERSION == null) {
 }
 if (System.getenv().ARTIFACT_VERSION != null) {
     artifact_version = "${system.getenv().ARTIFACT_VERSION}"
-}
-
-def modsTomlSpec = copySpec{
-    from(sourceSets.main.resources) {
-        include 'META-INF/mods.toml'
-        expand 'version': version,
-            'loader_range': loader_range,
-            'minecraft_range': minecraft_range,
-            'forge_range': forge_range
-    }
 }
 
 def buildPaths = [
