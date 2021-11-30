@@ -1,5 +1,6 @@
-package mrthomas20121.bio_metals;
+package mrthomas20121.bio_metals.init;
 
+import mrthomas20121.bio_metals.init.BioRegistry;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;

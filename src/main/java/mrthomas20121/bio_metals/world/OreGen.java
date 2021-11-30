@@ -1,5 +1,8 @@
-package mrthomas20121.bio_metals;
+package mrthomas20121.bio_metals.world;
 
+import mrthomas20121.bio_metals.BioConfig;
+import mrthomas20121.bio_metals.BioMetals;
+import mrthomas20121.bio_metals.init.BioRegistry;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;
@@ -10,8 +13,8 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod.EventBusSubscriber(modid = BioMetals.mod_id)
-public class Worldgen {
+@Mod.EventBusSubscriber(modid = BioMetals.MOD_ID)
+public class OreGen {
 
     public static int ANTIMONY_VEIN = 6;
     public static int ANTIMONY_HEIGHT = 40;
@@ -47,7 +50,7 @@ public class Worldgen {
             .squared().count(ZIRCONIUM_CHUNK);
 
     public static ConfiguredFeature<?, ?> newConfiguredFeature(String registryName, ConfiguredFeature<?, ?> configuredFeature) {
-        Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation(BioMetals.mod_id, registryName), configuredFeature);
+        Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation(BioMetals.MOD_ID, registryName), configuredFeature);
         return configuredFeature;
     }
 

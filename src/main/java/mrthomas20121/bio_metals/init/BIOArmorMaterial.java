@@ -1,8 +1,8 @@
-package mrthomas20121.bio_metals;
+package mrthomas20121.bio_metals.init;
 
+import mrthomas20121.bio_metals.init.BioRegistry;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
-import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 import net.minecraft.util.SoundEvent;

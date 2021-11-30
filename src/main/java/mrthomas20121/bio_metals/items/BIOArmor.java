@@ -1,6 +1,6 @@
 package mrthomas20121.bio_metals.items;
 
-import mrthomas20121.bio_metals.BioRegistry;
+import mrthomas20121.bio_metals.init.BioRegistry;
 import net.minecraft.entity.Entity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;

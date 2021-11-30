@@ -1,5 +1,6 @@
-package mrthomas20121.bio_metals;
+package mrthomas20121.bio_metals.init;
 
+import mrthomas20121.bio_metals.BioMetals;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 
@@ -157,7 +158,7 @@ public enum Metal {
 
         @Override
         public Item create(Metal metal) {
-            return new Item(new Item.Properties().tab(BioRegistry.tab)).setRegistryName(BioMetals.mod_id, metal.name()+"_"+this.name());
+            return new Item(new Item.Properties().tab(BioRegistry.tab)).setRegistryName(BioMetals.MOD_ID, metal.name()+"_"+this.name());
         }
     }
 

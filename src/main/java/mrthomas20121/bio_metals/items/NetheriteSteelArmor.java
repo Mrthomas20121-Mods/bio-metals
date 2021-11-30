@@ -1,7 +1,7 @@
 package mrthomas20121.bio_metals.items;
 
 import com.google.common.collect.ImmutableList;
-import mrthomas20121.bio_metals.BioRegistry;
+import mrthomas20121.bio_metals.init.BioRegistry;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;

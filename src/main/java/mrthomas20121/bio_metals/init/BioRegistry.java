@@ -1,5 +1,6 @@
-package mrthomas20121.bio_metals;
+package mrthomas20121.bio_metals.init;
 
+import mrthomas20121.bio_metals.BioMetals;
 import mrthomas20121.bio_metals.blocks.BIOBlock;
 import mrthomas20121.bio_metals.items.BIOArmor;
 import mrthomas20121.bio_metals.items.NetheriteSteelArmor;
@@ -17,7 +18,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 import javax.annotation.Nonnull;
 
-@Mod.EventBusSubscriber(modid = BioMetals.mod_id, bus= Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = BioMetals.MOD_ID, bus= Mod.EventBusSubscriber.Bus.MOD)
 public class BioRegistry {
 
     public static ItemGroup tab = new ItemGroup("bio_metals") {
@@ -316,13 +317,13 @@ public class BioRegistry {
     }
 
     private static Item register(String registry_name, Item item, IForgeRegistry<Item> r) {
-        item.setRegistryName(BioMetals.mod_id, registry_name);
+        item.setRegistryName(BioMetals.MOD_ID, registry_name);
         r.register(item);
         return item;
     }
 
     private static void register(String registry_name, Block block, IForgeRegistry<Block> r) {
-        block.setRegistryName(BioMetals.mod_id, registry_name);
+        block.setRegistryName(BioMetals.MOD_ID, registry_name);
         r.register(block);
     }
 }
