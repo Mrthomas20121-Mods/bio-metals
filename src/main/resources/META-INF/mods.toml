@@ -1,29 +1,34 @@
-modLoader="javafml"
-loaderVersion="[36,)"
-license="MIT License"
-issueTrackerURL="https://github.com/Mrthomas20121/bio-metals/issues"
+modLoader = "javafml"
+loaderVersion = "[40,)"
+license = "MIT License"
+issueTrackerURL = "https://github.com/Mrthomas20121-Mods/bio-metals/issues"
 
 [[mods]]
-modId="bio_metals"
-version="${version}"
-displayName="Bio Metals"
-displayURL="https://www.curseforge.com/minecraft/mc-mods/bio-metals"
-#logoFile="tinkers_reforged_logo.png"
-authors="Mrthomas20121"
-description='''
-Add new Metals to Minecraft
+modId = "bio_metals"
+version = "1.0.0"
+displayName = "Tinkers Reforged"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/bio-metals"
+#logoFile="bio_metals_logo.png"
+#credits = "Materialis and The Tinkers Devs for their help"
+authors = "Mrthomas20121"
+description = '''
+Add new materials to Tinkers Construct
 '''
 
-[[dependencies.bio_metals]]
-    modId="forge"
-    mandatory=true
-    versionRange="[36,)"
+[[dependencies.bio_metals]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[40,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
     ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
-
 [[dependencies.bio_metals]]
     modId="minecraft"
     mandatory=true
-    versionRange="${minecraft_range}"
+    versionRange="[1.18.2,1.19)"
     ordering="NONE"
     side="BOTH"
