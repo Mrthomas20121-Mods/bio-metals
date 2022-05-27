@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bio_metals:nordic_gold_chestplate"
+  }
+}

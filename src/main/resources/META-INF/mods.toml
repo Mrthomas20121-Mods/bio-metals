@@ -6,7 +6,7 @@ issueTrackerURL = "https://github.com/Mrthomas20121-Mods/bio-metals/issues"
 [[mods]]
 modId = "bio_metals"
 version = "1.0.0"
-displayName = "Tinkers Reforged"
+displayName = "Bio Metals"
 displayURL = "https://www.curseforge.com/minecraft/mc-mods/bio-metals"
 #logoFile="bio_metals_logo.png"
 #credits = "Materialis and The Tinkers Devs for their help"
